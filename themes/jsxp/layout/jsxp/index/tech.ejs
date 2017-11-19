@@ -1,0 +1,34 @@
+<dl class="item">
+    <dt>
+        <img src="assets/images/<%-technology.img%>">
+    </dt>
+    <dd>
+        <p><%= technology.name %></p>
+        <div class="mybtn">
+            <a href="tech/<%-technology.id%>/notes.html">教学讲义</a>
+        </div>
+        <div class="row text1">
+            <div class="col-sm-4 change_blue">
+                <a href="tech/<%-technology.id%>/case.html"><%=technology.case%>
+                    <br>案例</a>
+            </div>
+            <div class="col-sm-4 change_blue center">
+                <a href="##"><%=technology.knowledge%>
+                    <br>核心知识</a>
+            </div>
+            <div class="col-sm-4 change_blue">
+                <a href="##"><%=technology.post%>
+                    <br>文章</a>
+            </div>
+        </div>
+        <div class="row text2">
+            <div class="col-sm-6 change_blue border_right">
+                <a href="##">教学计划</a>
+            </div>
+            <div class="col-sm-6 change_blue">
+                <a href="tech/<%-technology.id%>/relative.html">相关资料</a>
+            </div>
+
+        </div>
+    </dd>
+</dl>

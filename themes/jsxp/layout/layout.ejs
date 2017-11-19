@@ -1,0 +1,21 @@
+<%- partial('common/head') %>
+<body>
+    <div id="wrap">
+        <%- partial('common/header', null, {cache: !config.relative_link}) %>
+        <div class="container">
+            <div class="main-body container-inner">
+                <%if(page.hideSlide) {%>
+                    <%- partial('common/main') %>
+                <%}else{%>
+                    <div class="main-body-inner">
+                        <%- partial('common/main') %>
+                        <%- partial('common/sidebar') %>
+                    </div>
+                <%}%>
+            </div>
+        </div>
+        <%- partial('common/footer', null, {cache: !config.relative_link}) %>
+        <%- partial('common/scripts') %>
+    </div>
+</body>
+</html>
