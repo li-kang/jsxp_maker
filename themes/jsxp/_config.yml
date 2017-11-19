@@ -27,6 +27,7 @@ customize:
 
 # Widgets
 widgets:
+    - tech
     - toc
     - recent_posts
     - category
