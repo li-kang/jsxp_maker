@@ -1,0 +1,23 @@
+<div class="widget-wrap widget-list">
+    <h3 class="widget-title"><%= __('sidebar.toc') %></h3>
+    <div class="widget">
+        <div class="toc"></div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/3.0.5/tocbot.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/3.0.5/tocbot.min.js"></script>
+        <script>
+        $(function(){
+            $('h1,h2,h3').each(function(i){
+                if(!$(this).attr('id')) $(this).attr('id','list'+i) ;
+            })
+        
+            tocbot.init({
+                tocSelector: '.toc',
+                contentSelector: '.main-body-content',
+                headingSelector: 'h1, h2, h3',
+                positionFixedSelector: '.widgets-container',
+                fixedSidebarOffset: 'auto'
+            });
+        })
+        </script>
+    </div>
+</div>

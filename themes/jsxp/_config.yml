@@ -27,6 +27,7 @@ customize:
 
 # Widgets
 widgets:
+    - toc
     - recent_posts
     - category
     # - archive
