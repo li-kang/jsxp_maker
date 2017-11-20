@@ -4,6 +4,7 @@ menu:
     # Delete this row if you don't want categories in your header nav bar
     Categories: 
     Blog: /blog.html
+    Case: #
     Nav: #
     About: /about.html
 
