@@ -1,9 +1,8 @@
 <!-- <link rel="stylesheet" href="css/index.css"> -->
 <div class="row">
-    <% for(var i = 0; i < site.data.technologies.length; ++i) {%>
-      <div class="col-md-3 col-sm-6">
-          <%- include('tech', {technology: site.data.technologies[i]}) %>
-      </div>
+    <% for(var key in site.data.technologies) { %>
+        <div class="col-md-3 col-sm-6">
+            <%- include('tech', {tech: key}) %>
+        </div>
     <% } %>
-
 </div>

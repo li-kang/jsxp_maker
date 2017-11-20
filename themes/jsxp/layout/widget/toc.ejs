@@ -5,11 +5,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/3.0.5/tocbot.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/3.0.5/tocbot.min.js"></script>
         <script>
-        $(function(){
-            $('h1,h2,h3').each(function(i){
-                if(!$(this).attr('id')) $(this).attr('id','list'+i) ;
-            })
-        
+        $(function(){        
             tocbot.init({
                 tocSelector: '.toc',
                 contentSelector: '.main-body-content',

@@ -3,7 +3,8 @@ menu:
     Home: /
     # Delete this row if you don't want categories in your header nav bar
     Categories: 
-    tect: https://github.com
+    Blog: /blog.html
+    Nav: #
     About: /about.html
 
 # Customize
@@ -12,7 +13,7 @@ customize:
         width: 165
         height: 60
         url: images/logo-header.png
-    theme_color: '#d35'
+    theme_color: 'purple'
     highlight: github
     sidebar: right # sidebar position, options: left, right
     thumbnail: true # enable posts thumbnail, options: true, false
