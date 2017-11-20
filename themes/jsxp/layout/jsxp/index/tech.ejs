@@ -1,32 +1,32 @@
 <% var item = site.data.technologies[tech] %>
-<dl class="technolog">
+<dl class="technology">
     <dt>
         <img src="/assets/images/<%-item.img%>">
     </dt>
     <dd>
         <p><%= item.name %></p>
-        <div class="mybtn">
+        <div class="notes">
             <a href="tech/<%-tech%>/notes.html">教学讲义</a>
         </div>
-        <div class="row text1">
+        <div class="row">
             <div class="col-sm-4 change_blue">
                 <a href="tech/<%-tech%>/case.html"><%=item.case%>
                     <br>案例</a>
             </div>
-            <div class="col-sm-4 change_blue center">
+            <div class="col-sm-4">
                 <a href="##"><%=item.knowledge%>
                     <br>核心知识</a>
             </div>
-            <div class="col-sm-4 change_blue">
+            <div class="col-sm-4">
                 <a href="##"><%=item.post%>
                     <br>文章</a>
             </div>
         </div>
-        <div class="row text2">
-            <div class="col-sm-6 change_blue border_right">
+        <div class="row">
+            <div class="col-sm-6">
                 <a href="##">教学计划</a>
             </div>
-            <div class="col-sm-6 change_blue">
+            <div class="col-sm-6">
                 <a href="tech/<%-tech%>/relative.html">相关资料</a>
             </div>
 
