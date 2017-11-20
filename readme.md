@@ -20,8 +20,9 @@
 0. 浏览项目：https://github.com/li-kang/jsxp_maker/tree/master
 1. 从 github 获取项目：git clone https://github.com/li-kang/jsxp_maker.git
 2. 安装依赖：cnpm install
-3. 启动项目: hexo serve
-4. 在浏览器中查看：http://localhost:4000
+3. 安装 hexo 命令行： cnpm install -g hexo-cli
+4. 启动项目: hexo serve
+5. 在浏览器中查看：http://localhost:4000
 
 # 首次添加内容
 * 设置github帐户。
