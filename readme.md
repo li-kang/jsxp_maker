@@ -11,6 +11,10 @@
 * JSON Front-matter
 * 模版（ejs 等）
 
+## CSS
+* css 选择器 不要影响整体样式
+* 可以使用 sass、less、stylus
+
 # 文章参数
 * 设置标题
 * 设置文章 category 

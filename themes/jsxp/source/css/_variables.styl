@@ -8,20 +8,22 @@ if hexo-config("customize.theme_color")
     color-theme = convert(hexo-config("customize.theme_color"))
 else
     color-theme = #3b8dbd
+color-light = #fff
 color-grey = #aaa
-color-header-background = #26272b
+color-header-background = color-theme
 color-main-background = #fff
 color-background = #eaeaea
 color-mobile-nav-background = #191919
 color-border = #ddd
 color-border-light = #eee
-color-nav-foreground = rgba(255,255,255,0.7)
-color-nav-background = #33363b
-color-nav-hover-background = rgba(0,0,0,0.1)
+color-nav-foreground = rgba(255,255,255,0.9)
+color-nav-background = color-theme - 40%
+color-nav-hover-background = rgba(0,0,0,0.4)
 color-sidebar-background = #f0f0f0
 color-sidebar-text = #777
 color-sidebar-text-dark = #444
-color-footer-background = #33363b
+color-footer-foreground = rgba(255,255,255,0.9)
+color-footer-background = color-theme
 
 // Fonts
 font-sans = "Titillium Web", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif
