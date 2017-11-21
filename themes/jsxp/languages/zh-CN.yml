@@ -8,6 +8,7 @@ index:
     tag: '标签：'
     blog: '博客'
     nav: '网站导航'
+    bbs: ' 技术论坛'
     case: '项目案例'
 nav:
     current_page:

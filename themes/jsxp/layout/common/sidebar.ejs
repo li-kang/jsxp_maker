@@ -3,15 +3,21 @@
     <div class="sidebar-top">
         <p><%= __('sidebar.follow') %>:</p>
         <ul class="social-links">
-            <% for (var i in theme.customize.social_links) { %>
-                <% if (theme.customize.social_links[i]) { %>
-                <li>
-                    <a class="social-tooltip" title="<%= i %>" href="<%- url_for(theme.customize.social_links[i]) %>" target="_blank">
-                        <i class="icon fa fa-<%= i %>"></i>
-                    </a>
-                </li>
-                <% } %>
-            <% } %>
+            <li>
+                <a class="social-tooltip" title="火星时代" href="http://edu.hxsd.com/edunew/topics/webfull/index.html" target="_blank">
+                    <i class="icon fa fa-dribbble"></i>
+                </a>
+            </li>
+            <li>
+                <a class="social-tooltip" title="weibo" href="#" target="_blank">
+                    <i class="icon fa fa-weibo"></i>
+                </a>
+            </li>
+            <li>
+                <a class="social-tooltip" title="rss" href="#" target="_blank">
+                    <i class="icon fa fa-rss"></i>
+                </a>
+            </li>
         </ul>
     </div>
     <% if (is_post()) { %>
