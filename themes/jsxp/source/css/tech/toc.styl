@@ -1,3 +1,16 @@
-.widget-list ul li a:before, .widget-list ol li a:before
-    content:''
-    font-size:0
+.widget-list
+    .toc
+        .toc-list-item
+            padding:2px 0
+            border:none
+            .toc-link
+                &:before
+                    background-color: #ddd 
+                    content:''
+            .is-active-link
+                color: #38b7ea    //color-theme  用了没颜色
+                &:before 
+                    background-color: #38b7ea 
+
+
+   
