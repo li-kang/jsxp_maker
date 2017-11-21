@@ -1,5 +1,5 @@
 <% 
-    var category = page.categories[0];
+    var category = page.categories && page.categories[0];
     var tech = site.data.technologies[category] 
 %>
 <% if (tech) { %>

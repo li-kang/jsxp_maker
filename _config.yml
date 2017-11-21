@@ -77,4 +77,7 @@ theme: jsxp
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/li-kang/jsxp.git
+  branch: master
+  
