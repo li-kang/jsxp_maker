@@ -1,8 +1,0 @@
-<%- css('css/tech/index') %>
-<div class="row">
-    <% for(var key in site.data.technologies) { %>
-        <div class="col-md-3 col-sm-6">
-            <%- include('tech', {tech: key}) %>
-        </div>
-    <% } %>
-</div>

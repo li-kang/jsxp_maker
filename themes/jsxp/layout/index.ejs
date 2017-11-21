@@ -1,2 +1,27 @@
 <%page.hideSlide=true%>
-<%- partial('jsxp/index/index') %>
+
+<%- css('css/tech/index') %>
+<%- css('libs/zeroModal/zeroModal') %>
+<%- js('libs/zeroModal/zeroModal.min') %>
+
+<div class="row">
+    <% for(var key in site.data.technologies) { %>
+        <div class="col-md-3 col-sm-6">
+            <%- include('jsxp/tech', {tech: key}) %>
+        </div>
+    <% } %>
+</div>
+
+<script>
+  $('.plan').click(function(){
+    zeroModal.alert({
+      content: '未开通权限!',
+      contentDetail: '请联系管理员开通权限后再进行操作',
+      transition:true,
+      opacity: 1, // 遮罩层的透明度
+//            forbidBodyScroll: true,  //是否禁用滚动条
+      esc: true //是否需要按esc键退出弹出层，默认false
+
+    });
+  })
+</script>
