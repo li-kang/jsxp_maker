@@ -31,12 +31,12 @@ customize:
 widgets:
     - tech
     - toc
-    - recent_posts
-    - category
+    # - recent_posts
+    # - category
     # - archive
-    - tag
-    - tagcloud
-    - links
+    # - tag
+    # - tagcloud
+    # - links
 
 # Search
 search:
