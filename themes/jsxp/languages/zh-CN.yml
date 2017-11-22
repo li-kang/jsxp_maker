@@ -10,6 +10,7 @@ index:
     nav: '网站导航'
     bbs: ' 技术论坛'
     case: '项目案例'
+    enroll: '报名学习'
 nav:
     current_page:
         other: '第 %d 页，'
