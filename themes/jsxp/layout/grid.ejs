@@ -1,50 +1,41 @@
 <%- css('css/tech/grid')%>
 
-<div class="grid">
-  <div class="modal">
-    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-    <div id="btn-close-modal" class="close-modal close">
-      <img src="images/close.jpg" alt="">
-    </div>
+  <div class="grid">
 
-    <div class="modal-content">
-      <iframe frameborder="0" style="width:100%;height:100%;"></iframe>
-    </div>
-  </div>
-
-  <div class="row">
-    <% for(var i = 0; i < page.items.length; ++i) { %>
-      <div class="col-md-4 col-sm-6">
-        <%- include('jsxp/grid_item', {item: page.items[i]}) %>
+    <div id="animatedModal">
+      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+      <div id="btn-close-modal" class="close-animatedModal close">
+        <img src="/css/images/close.png" alt="">
       </div>
-    <% } %>
+
+      <div class="modal-content" style="height:100vh;">
+        <iframe frameborder="0" style="width:100%;height:100%;"></iframe>
+      </div>
+    </div>
+
+    <div class="row">
+      <% for(var i = 0; i < page.items.length; ++i) { %>
+        <div class="col-md-4 col-sm-6">
+          <%- include('jsxp/grid_item', {item: page.items[i]}) %>
+        </div>
+        <% } %>
+    </div>
   </div>
-</div>
+  <%- js('libs/animatedModal/animatedModal.min')%>
+  
+    <script>
+      $(function () {
+        $('body').prepend($('#animatedModal')) ;
+        // $('.modal').appendTo($('body'));
+        $(".grid .item a").animatedModal();
+        // $('.main_left .item dt').text(function(i,orig){
+        //     return  `[项目${i+1}] ${orig}`
+        // });
 
-<script>
-$(function(){
-  $(".main_left .item a").animatedModal();
-  $('.main_left .item dt').text(function(i,orig){
-      return  `[项目${i+1}] ${orig}`
-  });
-
-  // 设置所有的logo
-  $(".main_left span").each(function(i){
-      var str;
-      i++;
-      if(i < 10){
-          str="item_0"+i;
-      }else{
-          str="item_"+i;
-      }
-      $(this).css({"background-image":"url(images/"+str+".jpg)"})
-  })
-
-  // 设置所有的动效链接
-  $(".main_left a").each(function(i){
-      $(this).attr({"data-url":"case/"+(i+1)+".html"});
-  }).click(function(){
-      $('iframe').attr('src',$(this).attr("data-url"));
-  })
-})
-</script>
+        //设置所有的动效链接
+        $(".grid .item a").click(function () {
+          $('iframe').attr('src', $(this).attr("data-url"));
+          // $('iframe').attr('src', '#')
+        })
+      })
+    </script>
