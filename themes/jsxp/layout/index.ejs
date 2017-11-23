@@ -20,8 +20,8 @@
       transition:true,
       opacity: 1, // 遮罩层的透明度
 //            forbidBodyScroll: true,  //是否禁用滚动条
-      esc: true //是否需要按esc键退出弹出层，默认false
-
-    });
+      esc: true, //是否需要按esc键退出弹出层，默认false
+      width: $(window).width() < 768 ? '60%' : '300'
+    })
   })
 </script>
