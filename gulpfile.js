@@ -28,6 +28,8 @@ gulp.task("html", function () {
     .pipe(gulp.dest(DIST));
 });
 
+gulp.task('generate', ["css", "js", "html"]);
+
 gulp.task("default", ["css", "js", "html"]);
 
 gulp.task("watch", function () {

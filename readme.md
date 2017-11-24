@@ -9,8 +9,10 @@
 
 # 目录结构
 ## 推荐目录结构
-每门技术有一个独立的目录，相互不影响。
-每门技术的案例有公用的 js、css、images 等。
+
+* 每门技术有一个独立的目录，相互不影响。
+* 案例有公用的 js、css、images 等。
+* 每个案例有私有的 js、css、images 等。
 
 ```
 + tech
@@ -43,7 +45,6 @@
 
 * markdown
 * html
-* JSON Front-matter
 * 模版（ejs 等）
 
 ## CSS
@@ -57,13 +58,17 @@
 * 设置文章 category 
 * 作者
 
+## JSON Front-matter
+
+
+
+# 发布
+
+
 # 首次添加内容
 
 * 设置github帐户。
 * 为课程添加一个文件夹，命名为对应课程的 ID。
 * 添加notes、 case、 knowlage、 relative 页面。
+* 预览。
 * 发布。
-
-# 发布
-
-
