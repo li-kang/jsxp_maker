@@ -64,11 +64,6 @@
 
 ## JSON Front-matter
 
-
-
-# 发布
-
-
 # 首次添加内容
 
 * 设置github帐户。
@@ -76,3 +71,23 @@
 * 添加notes、 case、 knowlage、 relative 页面。
 * 预览。
 * 发布。
+
+## 生成静态页面
+* 更新源码 `git pull`
+* 清除缓存 `hexo clean`
+* 生成静态页面 `hexo g`
+
+## 发布
+* git 地址：https://github.com/li-kang/jsxp.git
+* 这个地址和生成器项目的地址是不同的
+
+## 发布步骤
+* 更新网站 git `git pull`
+* 替换 git 目录的对应文件
+* 提交 git 
+
+```shell
+git add *
+git commit -m '更新网站'
+git push
+```

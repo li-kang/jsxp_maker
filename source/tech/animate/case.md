@@ -1,6 +1,5 @@
 ;;;
 "layout": "grid",
-"title": "VUE",
 "items": [
   {
     "name": "延迟隐藏",

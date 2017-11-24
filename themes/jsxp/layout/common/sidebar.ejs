@@ -21,7 +21,6 @@
         </ul>
     </div>
     <% if (is_post()) { %>
-        <%- toc(page.content) %>    
         <%- partial('post/nav', {post: page}) %>
     <% } %>    
     <div class="widgets-container">

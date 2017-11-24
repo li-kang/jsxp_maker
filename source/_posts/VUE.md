@@ -1,5 +1,5 @@
 ---
-title: VUE
+title: VUE文章示例
 categories:
   - vue
 ---

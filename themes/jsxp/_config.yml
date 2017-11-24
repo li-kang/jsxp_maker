@@ -4,10 +4,10 @@ menu:
     # Delete this row if you don't want categories in your header nav bar
     # Categories: 
     Blog: /blog/
-    Case: #
+    # Case: #
     Nav: /nav.html
-    BBS: #
-    Enroll: #
+    # BBS: #
+    # Enroll: #
     About: /about.html
 
 # Customize

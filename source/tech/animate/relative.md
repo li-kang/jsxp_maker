@@ -1,5 +1,4 @@
 "layout": "relative",
-"title": "VUE",
 "materials": [
   {
     "name": "jQuery111手册",
