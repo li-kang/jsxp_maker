@@ -1,6 +1,7 @@
 ;;;
 "layout": "nav",
 "title": "网址导航",
+"includeHtml": true,
 "data": [{
     "id": "fePortals",
     "weight": 2,

@@ -1,10 +1,11 @@
+@import "../_variables"
+
 .mesh_nav
     overflow: hidden
     a
         text-decoration: none
     .sub-category
         padding: 20px 30px
-        background:#38b7ea
         margin-bottom: 20px
         .title
             font-size: 18px
@@ -19,7 +20,7 @@
         padding: 10px
         margin-top: 22px
         border: 1px solid #e4ecf3
-        box-shadow: 1px 2px 3px #f2f6f8
+        box-shadow: 1px 1px 1px #f2f6f8
         transition:.4s
         &:hover
             transform: translateY(-6px)
@@ -29,14 +30,15 @@
             position: relative
             font-size: 14px
             font-weight: 700
-            color: #3273dc
+            color: color-theme
             overflow: hidden
             text-overflow: ellipsis
             white-space: nowrap
             width:100%
             img 
-                width: 40px
-                height: 40px
+                margin-right: 6px
+                width: 38px
+                height: 38px
                 border-radius: 50%
                 vertical-align: middle
         .desc

@@ -2,7 +2,7 @@
 menu:
     Home: /
     # Delete this row if you don't want categories in your header nav bar
-    Categories: 
+    # Categories: 
     Blog: /blog.html
     Case: #
     Nav: /nav.html
@@ -24,11 +24,11 @@ customize:
 
 # Widgets
 widgets:
+    - category
+    - archive
     - tech
     - toc
     # - recent_posts
-    # - category
-    # - archive
     # - tag
     # - tagcloud
     # - links

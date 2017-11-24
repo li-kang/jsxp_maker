@@ -1,4 +1,6 @@
 <%- css('css/tech/toc') %>
+<% page.includeHtml = page.includeHtml || false %>
+
 <div class="widget-wrap widget-list widget-toc">
     <h3 class="widget-title"><%= __('sidebar.toc') %></h3>
     <div class="widget">
@@ -17,7 +19,8 @@
                 headingSelector: 'h1, h2, h3',
                 collapseDepth: 2,
                 positionFixedSelector: '.widget-toc',
-                fixedSidebarOffset: 595
+                fixedSidebarOffset: 595,
+                includeHtml: <%- page.includeHtml %>
             });
         })
         </script>

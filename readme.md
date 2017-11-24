@@ -1,3 +1,7 @@
+名称：火星时代-技术学派
+网址：www.JiShuXuePai.com
+技术、干货、教程、课程笔记
+
 # 环境搭建
 
 0. 浏览项目：https://github.com/li-kang/jsxp_maker/tree/master
