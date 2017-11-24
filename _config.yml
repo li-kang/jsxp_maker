@@ -8,7 +8,7 @@ subtitle: 火星时代-技术学派
 description: 
 author: LiKang
 language: zh-CN
-timezone: CN
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -25,7 +25,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: tech/*/case/**/*
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -79,6 +79,15 @@ feed:
 type: atom
 path: atom.xml
 limit: 20
+#hexo-all-minifier
+all_minifier: true
+image_minifier:
+  enable: false
+  interlaced: false
+  multipass: false
+  optimizationLevel: 2
+  pngquant: false
+  progressive: false
 
 ## Themes: https://hexo.io/themes/
 theme: jsxp

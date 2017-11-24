@@ -1,7 +1,9 @@
 <div class="item">
     <a target="_blank" href="<%- item.url %>">
         <div class="logo">
-            <img data-original="#" width="100%" class="loaded" src="#">
+            <% if (item.logo) { %>
+                <img data-original="<%- item.logo.url %>" width="100%" class="loaded" src="<%- item.logo.url %>">
+            <% } %>
             <%= item.name %>
         </div>
         <div class="desc"> <%= item.desc %></div>
