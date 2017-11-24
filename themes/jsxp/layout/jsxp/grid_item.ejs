@@ -1,9 +1,13 @@
 <div class="item">
-  <a href="#animatedModal">
+  <a href="#animatedModal" data-url="<%-item.url%>">
     <dd>
-      <span style="background-image:url(<%-item.image%>)"></span>
+      <span style="background-image:url(<%-item.img%>)"></span>
     </dd>
-    <dt><%=item.name%></dt>
+    <dt>
+      <%=item.name%>
+    </dt>
   </a>
-  <p><%=item.desc%></p>
+  <p>
+    <%=item.desc%>
+  </p>
 </div>

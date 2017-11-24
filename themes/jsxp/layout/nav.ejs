@@ -1,0 +1,37 @@
+<%- css('css/tech/nav')%>
+<div class="mesh_nav" id="fePortalsItem">
+    <% for(var i = 0; i < page.data.length; ++i) { %>
+        <div class="sub-category">
+            <div class="title">
+                <i class="fa fa-address-book"></i>
+                <%= page.data[i].name %>
+            </div>
+            <div class="row">
+            <!-- 标题 -->
+                <% for(var k = 0; k < page.data[i].list.length; ++k) { %>
+                    <div class="col-md-4 col-sm-6">
+                        <%- include('jsxp/nav_item', {item: page.data[i].list[k]}) %>
+                    </div>
+                <% } %>
+            </div>        
+        </div>
+    <% } %>
+
+  
+
+            <!-- <div class="col-md-4 col-sm-6">
+                
+                
+                <div class="item">
+                    <a target="_blank" href="https://www.docschina.org/">
+                        <div class="logo">
+                            <img data-original="./static/images/docschina.png" width="100%" class="loaded" src="./static/images/docschina.png">
+                            印记中文
+                        </div>
+                        <div class="desc"> 印记中文是最权威是技术中文文档社区</div>
+                    </a>    
+                </div>
+            </div> -->
+
+    </div>
+</div>
