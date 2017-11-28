@@ -1,11 +1,9 @@
-<dl class="col-md-2"><img src="images/book.png" alt=""></dl>
-<dl class="col-md-10">
-  <dt><h2><%=item.name%></h2></dt>
-  <dd>1.介绍了iQuery基础知识、iQuery Ajax等；第2部分为iQuery UI， 介绍了UI开发、UI交互开 发、UI部件开发、UI特效开发：第3部分为应用开发， 介绍了浏览器开发、导航开发、表格开发、表单开发：第4 部分为iQuery
-    Mobde
-  </dd>
+<dl class="col-2"><img src="<%- item.img %>" alt=""></dl>
+<dl class="col-10">
+  <dt><h2><%= item.name %></h2></dt>
+  <dd title="<%- item.desc %>"><%= item.desc %></dd>
   <dd class="down_btn">
-    <span class="left">下载密码:XXXX</span>
+    <span class="left">下载密码:<%= item.pwd %></span>
     <a href="##" class="right">立即下载</a>
     <div class="clear"></div>
   </dd>

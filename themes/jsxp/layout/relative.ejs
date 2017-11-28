@@ -5,7 +5,7 @@
     <h1>相关资料</h1>
     <div class="row materials">
         <% for(var i = 0; i < page.materials.length; ++i) {%>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-6">
             <%page.materials[i].logo = {url: page.materials[i].img}%>
             <%- include('jsxp/nav_item', {item: page.materials[i]}) %>
         </div>
@@ -15,11 +15,9 @@
     <h1>相关书籍</h1>
     <div class="row books">
         <% for(var i = 0; i < page.books.length; ++i) {%>
-        <div class="col-md-12">
             <div class="row">
-            <%- include('jsxp/relative_book', {item: page.books[i]}) %>
-            </div>  
-        </div>
+                <%- include('jsxp/relative_book', {item: page.books[i]}) %>
+            </div>
         <% } %>
     </div>
 </div>
