@@ -1,10 +1,13 @@
 <%- css('css/tech/relative') %>
+<%- css('css/tech/nav') %>
+
 <div class="article-single">
     <h1>相关资料</h1>
     <div class="row materials">
         <% for(var i = 0; i < page.materials.length; ++i) {%>
         <div class="col-md-4">
-            <%- include('jsxp/relative_material', {item: page.books[i]}) %>
+            <%page.materials[i].logo = {url: page.materials[i].img}%>
+            <%- include('jsxp/nav_item', {item: page.materials[i]}) %>
         </div>
         <% } %>
     </div>
