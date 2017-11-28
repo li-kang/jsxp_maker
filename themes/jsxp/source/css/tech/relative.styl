@@ -26,24 +26,28 @@
             clear:both
 
 .books
+    padding:0 15px
     &>div
         border-top:1px solid #eee
     dl:nth-of-type(1)
         padding:0
         img
-            height: 150px
+            height: auto
             max-width:100%
-            padding-top:10px
+            padding-top:25px
     dl:nth-of-type(2)
         dt  
             margin:15px 0
             font-weight:600
-        dd
-            // overflow:hidden
-            // text-overflow:ellipsis
-            // display:-webkit-box
-            // -webkit-box-orient:vertical
-            // -webkit-line-clamp:2  /*表示需要显示的行数*/
+        dd:nth-of-type(1)
+            color: gray
+            font-size: 14px
+            height: 68px
+            overflow: hidden
+            text-overflow: ellipsis
+            display: -webkit-box
+            -webkit-line-clamp: 3
+            -webkit-box-orient: vertical
         .down_btn
             margin:10px 0
             a 
