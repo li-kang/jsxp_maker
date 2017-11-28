@@ -1,7 +1,7 @@
 <% var item = site.data.technologies[tech] %>
 <dl class="technology">
     <dt>
-        <img src="/assets/images/<%-item.img%>">
+        <img src="<%-url_for('/assets/images/'+item.img)%>">
     </dt>
     <dd>
         <p><%= item.name %></p>

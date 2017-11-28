@@ -24,10 +24,18 @@
         <%- partial('post/nav', {post: page}) %>
     <% } %>    
     <div class="widgets-container">
-        <% if (theme.widgets) { %>
-            <% theme.widgets.forEach(function(widget) { %>
-                <%- partial('widget/' + widget) %>
-            <% }) %>
+        <% if (is_post() || is_home()) { %>
+            <% if (theme.post_widgets) { %>
+                <% theme.post_widgets.forEach(function(widget) { %>
+                    <%- partial('widget/' + widget) %>
+                <% }) %>
+            <% } %>
+        <% } else { %>
+            <% if( theme.tech_widgets) { %>
+                <% theme.tech_widgets.forEach(function(widget) { %>
+                    <%- partial('widget/' + widget) %>
+                <% }) %>
+            <% } %>
         <% } %>
     </div>
 </aside>
