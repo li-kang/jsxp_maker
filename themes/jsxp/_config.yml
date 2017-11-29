@@ -23,15 +23,20 @@ customize:
     favicon: # path to favicon
 
 # Widgets
-widgets:
-    - category
-    - archive
+tech_widgets:
     - tech
     - toc
+    - links
+
+post_widgets:
+    - tech
+    - category
+    # - archive
+    - toc
     # - recent_posts
-    # - tag
-    # - tagcloud
-    # - links
+    - tag
+    - tagcloud
+    - links
 
 # Search
 search:
@@ -78,4 +83,4 @@ miscellaneous:
         twitter_id:
         google_plus:
     links:
-        Hexo: http://hexo.io
+        火星时代: http://edu.hxsd.com/edunew/topics/webfull/index.html
