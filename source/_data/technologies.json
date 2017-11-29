@@ -125,6 +125,13 @@
     "knowledge": 10,
     "period": 10
   },
+  "less": {
+    "name": "Less与Sass",
+    "case": 10,
+    "post": 10,
+    "knowledge": 10,
+    "period": 10
+  },
   "mobile": {
     "name": "移动端项目",
     "case": 10,
@@ -138,12 +145,6 @@
     "post": 10,
     "knowledge": 10,
     "period": 10
-  },
-  "less": {
-    "name": "Less与Sass",
-    "case": 10,
-    "post": 10,
-    "knowledge": 10,
-    "period": 10
   }
+  
 }
