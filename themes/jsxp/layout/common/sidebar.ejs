@@ -31,3 +31,16 @@
         <% } %>
     </div>
 </aside>
+<script>
+    $(function(){
+        $(window).scroll(function(){
+            if($(document).scrollTop()>=240){
+                $('#sidebar .sidebar-toggle').addClass('fix');
+                if($('#sidebar .sidebar-toggle').css("display")=="block")
+                $('.is-position-fixed').css("top","35px");
+            }else{  
+                $('#sidebar .sidebar-toggle').removeClass('fix');
+            }
+        })
+    })
+</script>

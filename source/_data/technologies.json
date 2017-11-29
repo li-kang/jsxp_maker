@@ -1,7 +1,6 @@
 {
   "html": {
     "name": "HTML与CSS网站开发",
-    "img": "file_type_html.svg",
     "case": 11,
     "post": 10,
     "knowledge": 10,
@@ -9,7 +8,6 @@
   },
   "markdown": {
     "name": "Markdown",
-    "img": "file_type_markdown.svg",
     "case": 10,
     "post": 10,
     "knowledge": 10,
@@ -17,7 +15,6 @@
   },
   "js": {
     "name": "JavaScript编程语言",
-    "img": "file_type_js.svg",
     "case": 10,
     "post": 10,
     "knowledge": 10,
@@ -25,7 +22,6 @@
   },
   "bom": {
     "name": "BOM与DOM操作",
-    "img": "DOM.jpg",
     "case": 10,
     "post": 10,
     "knowledge": 10,
@@ -33,7 +29,6 @@
   },
   "jquery": {
     "name": "jQuery",
-    "img": "jq.jpg",
     "case": 10,
     "post": 10,
     "knowledge": 10,
@@ -41,7 +36,6 @@
   },
   "es6": {
     "name": "ES6",
-    "img": "es6.jpg",
     "case": 10,
     "post": 10,
     "knowledge": 10,
@@ -49,7 +43,6 @@
   },
   "vue": {
     "name": "Vue前端框架",
-    "img": "vue.jpg",
     "case": 10,
     "post": 10,
     "knowledge": 10,
@@ -57,16 +50,13 @@
   },
   "react": {
     "name": "React前端框架",
-    "img": "react.svg",
     "case": 10,
     "post": 10,
     "knowledge": 10,
     "period": 10
   },
   "animate": {
-    "id": "animate",
     "name": "动效交互与游戏",
-    "img": "game.jpg",
     "case": 10,
     "post": 10,
     "knowledge": 10,
@@ -74,7 +64,6 @@
   },
   "fwq": {
     "name": "网络服务器搭建",
-    "img": "fwq.jpg",
     "case": 10,
     "post": 10,
     "knowledge": 10,
@@ -82,7 +71,6 @@
   },
   "php": {
     "name": "PHP",
-    "img": "file_type_php.svg",
     "case": 10,
     "post": 10,
     "knowledge": 10,
@@ -90,7 +78,6 @@
   },
   "mysql": {
     "name": "MySql数据库",
-    "img": "mysql.jpg",
     "case": 10,
     "post": 10,
     "knowledge": 10,
@@ -98,7 +85,6 @@
   },
   "laravel": {
     "name": "Laravel",
-    "img": "laravel.jpg",
     "case": 10,
     "post": 10,
     "knowledge": 10,
@@ -106,7 +92,6 @@
   },
   "redis": {
     "name": "Redis非关系数据库",
-    "img": "redis.jpg",
     "case": 10,
     "post": 10,
     "knowledge": 10,
@@ -114,7 +99,6 @@
   },
   "git": {
     "name": "Git团队协同开发",
-    "img": "file_type_git.svg",
     "case": 10,
     "post": 10,
     "knowledge": 10,
@@ -122,7 +106,6 @@
   },
   "gulp": {
     "name": "Gulp构建工具",
-    "img": "file_type_gulp.svg",
     "case": 10,
     "post": 10,
     "knowledge": 10,
@@ -130,7 +113,6 @@
   },
   "webpack": {
     "name": "Webpack模块工具",
-    "img": "webpack.svg",
     "case": 10,
     "post": 10,
     "knowledge": 10,
@@ -138,7 +120,6 @@
   },
   "bootstrap": {
     "name": "响应式与Bootstrap",
-    "img": "bt.png",
     "case": 10,
     "post": 10,
     "knowledge": 10,
@@ -146,7 +127,6 @@
   },
   "mobile": {
     "name": "移动端项目",
-    "img": "yd.jpg",
     "case": 10,
     "post": 10,
     "knowledge": 10,
@@ -154,7 +134,13 @@
   },
   "wechat": {
     "name": "微信小程序",
-    "img": "wcj.jpg",
+    "case": 10,
+    "post": 10,
+    "knowledge": 10,
+    "period": 10
+  },
+  "less": {
+    "name": "Less与Sass",
     "case": 10,
     "post": 10,
     "knowledge": 10,

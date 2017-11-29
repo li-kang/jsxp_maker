@@ -42,12 +42,21 @@
     }
 
     // Sidebar expend
+    var on_off = true ;
     $('#sidebar .sidebar-toggle').click(function () {
         if($('#sidebar').hasClass('expend')) {
             $('#sidebar').removeClass('expend');
         } else {
             $('#sidebar').addClass('expend');
         }
+        //sidebar-toggle position fixed width auto
+        if(on_off){
+            $(this).css("width","300px")
+        }else{
+            $(this).css("width","50px")
+        }
+        on_off = !on_off;
+        
     });
 
 
