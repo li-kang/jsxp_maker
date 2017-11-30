@@ -62,7 +62,7 @@
     "knowledge": 10,
     "period": 10
   },
-  "fwq": {
+  "serve": {
     "name": "网络服务器搭建",
     "case": 10,
     "post": 10,
@@ -118,15 +118,15 @@
     "knowledge": 10,
     "period": 10
   },
-  "bootstrap": {
-    "name": "响应式与Bootstrap",
+  "less": {
+    "name": "Less与Sass",
     "case": 10,
     "post": 10,
     "knowledge": 10,
     "period": 10
   },
-  "less": {
-    "name": "Less与Sass",
+  "bootstrap": {
+    "name": "响应式与Bootstrap",
     "case": 10,
     "post": 10,
     "knowledge": 10,

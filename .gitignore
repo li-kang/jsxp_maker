@@ -9,3 +9,5 @@ dist
 package-lock.json
 task.md
 websit
+source/tech/**/*
+source/_post/**/*
