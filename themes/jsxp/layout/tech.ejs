@@ -8,7 +8,7 @@ for(var i = 0; i < site.pages.length; i++){
   if (!match)
     continue;
   var tech = match[1];
-  site.data.technologies[tech].case = p.h2;
+  site.data.technologies[tech].case = tagCounter(p);
 } %>
 
 
