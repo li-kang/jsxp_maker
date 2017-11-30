@@ -1,5 +1,17 @@
 <%page.hideSlide=true%>
 
+ 
+<% // 统计数据
+for(var i = 0; i < site.pages.length; i++){
+  var p = site.pages.data[i];
+  var match = p.path.match(/tech\/(\S*)\/case.html/);
+  if (!match)
+    continue;
+  var tech = match[1];
+  site.data.technologies[tech].case = p.h2;
+} %>
+
+
 <%- css('css/tech/index') %>
 <%- css('libs/zeroModal/zeroModal') %>
 <%- js('libs/zeroModal/zeroModal.min') %>

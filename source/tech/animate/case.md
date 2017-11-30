@@ -1,5 +1,7 @@
 ;;;
 "layout": "grid",
+"categories": ["animate"],
+"title": "动效案例",
 "items": [
   {
     "name": "延迟隐藏",
