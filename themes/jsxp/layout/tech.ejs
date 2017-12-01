@@ -1,16 +1,30 @@
 <%page.hideSlide=true%>
 
  
-<% // 统计数据
+<% // 统计数据 & 设置标题
 for(var i = 0; i < site.pages.length; i++){
   var p = site.pages.data[i];
-  var match = p.path.match(/tech\/(\S*)\/case.html/);
+  var match = p.path.match(/tech\/(\S*)\/(\S*).html/);
   if (!match)
     continue;
+  
   var tech = match[1];
-  site.data.technologies[tech].case = tagCounter(p);
+  switch(match[2]) {
+    case 'notes': {
+      p.title = '教学讲义'; 
+      break;
+    }
+    case 'case': {
+      site.data.technologies[tech].case = tagCounter(p);
+      p.title = '案例'; 
+      break;
+    }
+    case 'relative': {
+      p.title = '资料'; 
+      break;
+    }
+  }
 } %>
-
 
 <%- css('css/tech/index') %>
 <%- css('libs/zeroModal/zeroModal') %>
