@@ -2,7 +2,10 @@
 <%- css('css/tech/nav') %>
 
 <div class="article-single">
-    <h1>相关资料</h1>
+    <h1 class="title">
+        <i class="icon fa fa-th-list"></i>
+        相关资料
+    </h1>
     <div class="row materials">
         <% for(var i = 0; i < page.materials.length; ++i) {%>
         <div class="col-md-4 col-sm-6">
@@ -12,7 +15,10 @@
         <% } %>
     </div>
 
-    <h1>相关书籍</h1>
+    <h1 class="title">
+        <i class="icon fa fa-th-list"></i>
+        相关书籍
+    </h1>
     <div class="row books">
         <% for(var i = 0; i < page.books.length; ++i) {%>
             <div class="row">

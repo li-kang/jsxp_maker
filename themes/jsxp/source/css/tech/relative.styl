@@ -1,3 +1,5 @@
+@import "../_variables"
+
 .materials
     &>div
         padding:0 10px
@@ -12,7 +14,6 @@
             h2
                 font-size 16px
                 font-weight:600 
-
             p
                 font-size:14px
                 line-height:30px
@@ -27,6 +28,7 @@
 
 .books
     padding:0 15px
+    margin-top:15px
     &>div
         border-top:1px solid #eee
     dl:nth-of-type(1)
@@ -39,6 +41,7 @@
         dt  
             margin:15px 0
             font-weight:600
+            color:color-theme
         dd:nth-of-type(1)
             color: gray
             font-size: 14px
@@ -57,6 +60,8 @@
                 border:1px solid #eaeaea
                 border-radius:3px
                 margin-top:-7px
+                color:gray
+
             .clear
                 clear:both
             
