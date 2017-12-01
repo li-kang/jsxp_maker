@@ -50,7 +50,7 @@
     "pwd": "nsat"
   },
   {
-    "name": "javascript高级程序设计",
+    "name": "JavaScript高级程序设计",
     "desc": "作为JavaScript技术经典名著，《JavaScript高级程序设计（第3版）》承继了之前版本全面深入、贴近实战的特点，在详细讲解了JavaScript语言的核心之后，条分缕析地为读者展示了现有规范及实现为开发Web应用提供的各种支持和特性。",
     "img": "images/books_js2.jpg",
     "url": "https://pan.baidu.com/s/1kUSE2Z9",
@@ -58,3 +58,4 @@
   }
 ]
 ;;;
+
