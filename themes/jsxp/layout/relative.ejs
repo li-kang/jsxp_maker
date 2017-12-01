@@ -7,7 +7,7 @@
         <% for(var i = 0; i < page.materials.length; ++i) {%>
         <div class="col-md-4 col-sm-6">
             <%page.materials[i].logo = {url: page.materials[i].img}%>
-            <%- include('jsxp/nav_item', {item: page.materials[i]}) %>
+            <%- include('jsxp/nav_item', {item: page.materials[i], showInToc: true}) %>
         </div>
         <% } %>
     </div>

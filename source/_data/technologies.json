@@ -70,7 +70,7 @@
     "period": 10
   },
   "php": {
-    "name": "PHP",
+    "name": "PHP服务端开发技术",
     "case": 10,
     "post": 10,
     "knowledge": 10,
@@ -78,6 +78,20 @@
   },
   "mysql": {
     "name": "MySql数据库",
+    "case": 10,
+    "post": 10,
+    "knowledge": 10,
+    "period": 10
+  },
+  "smarty": {
+    "name": "Smarty模板引擎",
+    "case": 10,
+    "post": 10,
+    "knowledge": 10,
+    "period": 10
+  },
+  "thinkphp": {
+    "name": "ThinkPHP",
     "case": 10,
     "post": 10,
     "knowledge": 10,
@@ -119,7 +133,14 @@
     "period": 10
   },
   "less": {
-    "name": "Less与Sass",
+    "name": "Less",
+    "case": 10,
+    "post": 10,
+    "knowledge": 10,
+    "period": 10
+  },
+  "sass": {
+    "name": "Sass",
     "case": 10,
     "post": 10,
     "knowledge": 10,
