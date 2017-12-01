@@ -2,28 +2,32 @@
 <%- css('css/tech/nav') %>
 
 <div class="article-single">
-    <h1 class="title">
-        <i class="icon fa fa-th-list"></i>
-        相关资料
-    </h1>
-    <div class="row materials">
-        <% for(var i = 0; i < page.materials.length; ++i) {%>
-        <div class="col-md-4 col-sm-6">
-            <%page.materials[i].logo = {url: page.materials[i].img}%>
-            <%- include('jsxp/nav_item', {item: page.materials[i], showInToc: true}) %>
-        </div>
-        <% } %>
-    </div>
-
-    <h1 class="title">
-        <i class="icon fa fa-th-list"></i>
-        相关书籍
-    </h1>
-    <div class="row books">
-        <% for(var i = 0; i < page.books.length; ++i) {%>
-            <div class="row">
-                <%- include('jsxp/relative_book', {item: page.books[i]}) %>
+    <% if(page.materials && page.materials.length) { %>
+        <h1 class="title">
+            <i class="icon fa fa-th-list"></i>
+            相关资料
+        </h1>
+        <div class="row materials">
+            <% for(var i = 0; i < page.materials.length; ++i) {%>
+            <div class="col-md-4 col-sm-6">
+                <%page.materials[i].logo = {url: page.materials[i].img}%>
+                <%- include('jsxp/nav_item', {item: page.materials[i], showInToc: true}) %>
             </div>
-        <% } %>
-    </div>
+            <% } %>
+        </div>
+    <% } %>
+
+    <% if(page.books && page.books.length) { %>
+        <h1 class="title">
+            <i class="icon fa fa-th-list"></i>
+            相关书籍
+        </h1>
+        <div class="row books">
+            <% for(var i = 0; i < page.books.length; ++i) {%>
+                <div class="row">
+                    <%- include('jsxp/relative_book', {item: page.books[i]}) %>
+                </div>
+            <% } %>
+        </div>
+    <% } %>
 </div>
