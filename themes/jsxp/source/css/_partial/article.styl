@@ -151,23 +151,43 @@
     font-weight: 300
     line-height: line-height
     p, table
-        margin: line-height 0
+        font-size: 16px 
+        white-space: pre-line
+        line-height: 30px
+        color: #4a4a4a
+        
+        margin-bottom: 15px
+        margin-top: 15px
     h1, h2, h3, h4, h5, h6
-        font-weight: 600
+        font-weight: normal
         color: color-theme
-    h1, h2, h3, h4, h5, h6
-        line-height: line-height-title
-        margin: line-height-title 0
+        margin-top: 1.5rem
+        margin-bottom: 1rem
+        font-family: 'Menlo', 'Monaco', 'Source Code Pro', 'Consolas', 'Inconsolata', 'Ubuntu Mono', 'DejaVu Sans Mono', 'Courier New', 'Droid Sans Mono', 'Hiragino Sans GB', '\5FAE\8F6F\96C5\9ED1', monospace !important
+    h1
+        font-size: 28px   
+        margin-top: 0    
+    h2 
+        font-size: 24px   
+        &:first-child
+            margin-top: 0
+    h3 
+        font-size: 20px
+    h4 
+        font-size: 18px
     a
         color: color-theme
         text-decoration: none
         &:hover
             text-decoration: underline
     ul, ol, dl
-        margin-top: line-height
-        margin-bottom: line-height
-        list-style-position: outside
-        padding-left: 1.4em
+        padding-left: 32px !important
+        list-style-type: square !important
+        list-style-position: inherit
+        li 
+            line-height: 22px
+            font-size: 14px 
+            color:#4a4a4a
         p
             margin: 0
     img, video
@@ -189,21 +209,17 @@
         border-bottom: 1px solid color-border
         padding: 10px 0
     blockquote
-        color: #777
-        quote: none
-        margin: 0 0 20px 0
-        position: relative
-        padding-left: 28px
-        &:before
-            top: 0
-            left: 0
-            color: color-theme
-            font-size: 22px
-            content: "\f10d"
-            position: absolute
-            text-align: center
-            font-style: normal
-            font-family: 'FontAwesome'
+        line-height: 22px
+        padding: 15px 1rem
+        font-size: 14px
+        padding-right: 15px
+        margin-left: 0
+        border-left: 6px solid #dce6f0
+        background: #f2f7fb
+        margin: 1em 0 1em 0
+        p
+            font-size: 14px
+            margin: 0
         footer
             font-size: font-size
             margin: line-height 0
@@ -242,7 +258,13 @@
             width: 100%
             height: 100%
             margin-top: 0
-
+    .highlight
+        font-size: 10px
+        line-height: 12px
+        border: 1px solid #e2e2e2 !important
+        border-radius: 0
+        font-family: 'consolas', 'menlo', 'courier', 'monospace', 'Microsoft Yahei' !important
+        overflow-y: auto
 .article-more-link a
     display: inline-block
     line-height: 1em
